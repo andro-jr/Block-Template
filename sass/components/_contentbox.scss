@@ -1,0 +1,13 @@
+.content-drop-box{
+    @include center-content;
+    width: 500px;
+    border: 2px dashed $theme-primary-color ;
+    border-radius: 24px;
+    padding: 24px;
+    
+    img{
+        margin: auto;
+        margin-bottom: 4px;
+    }
+    
+}

@@ -1,0 +1,14 @@
+@mixin flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+// position center with absolute
+
+@mixin center-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
