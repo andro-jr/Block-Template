@@ -1,0 +1,138 @@
+.template-edit-display {
+
+    table {
+
+        width: 100%;
+
+        tr {
+            width: 100%;
+
+            td {
+                width: 100%;
+            }
+        }
+
+
+
+
+        .block {
+            padding: 20px;
+            border-radius: 6px;
+            position: relative;
+            cursor: pointer;
+            margin-top: 20px;
+            border: 2px solid transparent;
+
+            .edit-block {
+                background: $theme-primary-color;
+                position: absolute;
+                bottom: calc(100% + 1px);
+                display: flex;
+                padding: 10px 40px;
+                gap: 45px;
+                border-radius: 20px 20px 0px 0px;
+                display: none;
+            }
+
+            &:hover {
+                border: 2px solid $theme-primary-color;
+            }
+
+            &:hover .edit-block {
+                display: flex;
+            }
+
+            .text-block-boxed {}
+        }
+
+    }
+
+}
+
+
+
+.block-styles {
+
+    .block-style-cont {
+
+        .block-style-form {
+            display: flex;
+            flex-direction: column;
+
+
+            input {
+                outline: none;
+                background: #FFFFFF;
+                border: 1px solid #DEE2E6;
+                border-radius: 4px;
+                padding: 8px 10px;
+
+                &:focus,
+                &:focus-visible {
+                    border: 1px solid $theme-primary-color;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.edit-email-template {
+    width: 100%;
+    // height: 100%;
+    background: #FAFAFA;
+    border: 1px solid $theme-border;
+
+    .email-temlate-header {
+        background: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px $theme-black-05;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .email-content-contents {
+        min-height: 300px;
+    }
+
+    .email-template-footer {
+        min-height: 100px;
+        background: $theme-black;
+        text-align: center;
+        padding: 20px;
+        border-top: 7px solid $theme-primary-color;
+
+        .email-template-footer-social {
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+
+            img {
+                max-width: 20px;
+                max-height: 20px;
+            }
+        }
+
+        .email-template-footer-content {
+            padding: 20px;
+            padding-top: 0;
+         
+        }
+
+        .email-template-divider {
+            width: 100%;
+            background: rgb(151, 151, 151);
+            height: 1px;
+
+        }
+    }
+}
