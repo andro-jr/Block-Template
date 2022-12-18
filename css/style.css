@@ -68,6 +68,13 @@ p {
 .mr-b-8 {
   margin-bottom: 8px; }
 
+.block-input-single-row {
+  display: flex;
+  gap: 40px; }
+
+.block-slider {
+  max-width: 200px; }
+
 .template-container-box {
   display: flex;
   flex-wrap: wrap;
@@ -168,7 +175,7 @@ p {
     .template-edit-display table tr td {
       width: 100%; }
   .template-edit-display table .block {
-    padding: 20px;
+    padding: 10px;
     border-radius: 6px;
     position: relative;
     cursor: pointer;
@@ -191,14 +198,23 @@ p {
 .block-styles .block-style-cont .block-style-form {
   display: flex;
   flex-direction: column; }
-  .block-styles .block-style-cont .block-style-form input {
+  .block-styles .block-style-cont .block-style-form input, .block-styles .block-style-cont .block-style-form select {
     outline: none;
     background: #FFFFFF;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
     padding: 8px 10px; }
-    .block-styles .block-style-cont .block-style-form input:focus, .block-styles .block-style-cont .block-style-form input:focus-visible {
+    .block-styles .block-style-cont .block-style-form input:focus, .block-styles .block-style-cont .block-style-form input:focus-visible, .block-styles .block-style-cont .block-style-form select:focus, .block-styles .block-style-cont .block-style-form select:focus-visible {
       border: 1px solid #00A3CC; }
+  .block-styles .block-style-cont .block-style-form .color-input {
+    width: 50px;
+    height: 50px; }
+    .block-styles .block-style-cont .block-style-form .color-input::-webkit-slider-thumb {
+      background: red; }
+  .block-styles .block-style-cont .block-style-form .block-email-select {
+    width: 100%; }
+    .block-styles .block-style-cont .block-style-form .block-email-select select {
+      width: 100%; }
 
 .edit-email-template {
   width: 100%;
@@ -237,3 +253,39 @@ p {
       width: 100%;
       background: #979797;
       height: 1px; }
+
+.email-block-btn {
+  border-radius: 6px;
+  padding: 7px 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 7px 16px;
+  gap: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+  .email-block-btn:focus {
+    outline: none; }
+
+.email-block-btn-save {
+  background: #00A3CC;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #FFFFFF; }
+
+.email-block-btn-cancel {
+  background: #FCF2F0;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #BA372D; }
+
+.blocks-btn-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 40px;
+  margin-left: 10px; }

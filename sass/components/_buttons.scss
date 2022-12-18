@@ -1,0 +1,42 @@
+.email-block-btn {
+    border-radius: 6px;
+    padding: 7px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 16px;
+    gap: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+    
+}
+.email-block-btn-save{
+    background: $theme-primary-color;
+    color: white;font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #FFFFFF;
+
+}
+.email-block-btn-cancel{
+    background: #FCF2F0;;
+    color: white;font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: #BA372D;
+
+}
+
+.blocks-btn-container{
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;
+    margin-left: 10px;
+}

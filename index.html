@@ -27,7 +27,7 @@
                         </div>
                         <div class="email-content-contents" style="position: relative;">
 
-                            
+
                             <!-- <div class="content-drop-box">
                                 <img src="img/block-add.svg" alt="" class="mr-b-8" width="80" height="80">
                                 <div class="content-drop-box-text">
@@ -36,6 +36,7 @@
                                     </p>
                                 </div>
                             </div> -->
+
                             <table>
                                 <tbody>
                                     <tr>
@@ -48,14 +49,14 @@
                                                     <img src="img/delete.svg" alt="">
                                                 </div>
                                                 <div class="text-block">
-                                                  
+
                                                     <p>This is text block</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td> 
+                                        <td>
                                             <div class="block">
                                                 <div class="edit-block">
                                                     <img src="img/move.svg" alt="">
@@ -63,14 +64,15 @@
                                                     <img src="img/copy.svg" alt="">
                                                     <img src="img/delete.svg" alt="">
                                                 </div>
-                                                <div class="text-block" style="padding: 20px;font-size: 24px;text-align: center;font-weight: 600;">
+                                                <div class="text-block"
+                                                    style="padding: 20px;font-size: 24px;text-align: center;font-weight: 600;">
                                                     <p>This is Heading</p>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td> 
+                                        <td>
                                             <div class="block">
                                                 <div class="edit-block">
                                                     <img src="img/move.svg" alt="">
@@ -79,13 +81,15 @@
                                                     <img src="img/delete.svg" alt="">
                                                 </div>
                                                 <div class="button">
-                                                    <button style="background-color: #00A3CC;padding: 10px 20px;border-radius: 6px;color: white;outline: none;border: none;">This is Button</button>
+                                                    <button
+                                                        style="background-color: #00A3CC;padding: 10px 20px;border-radius: 6px;color: white;outline: none;border: none;">This
+                                                        is Button</button>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td> 
+                                        <td>
                                             <div class="block">
                                                 <div class="edit-block">
                                                     <img src="img/move.svg" alt="">
@@ -93,7 +97,8 @@
                                                     <img src="img/copy.svg" alt="">
                                                     <img src="img/delete.svg" alt="">
                                                 </div>
-                                                <img src="img/demo-img.png" alt="" width="200" height="200" style="object-fit: cover;">
+                                                <img src="img/demo-img.png" alt="" width="200" height="200"
+                                                    style="object-fit: cover;">
                                             </div>
                                         </td>
                                     </tr>
@@ -199,7 +204,7 @@
                         <div class="tab-content pt-5" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab">
-                                <div class="blocks-container">
+                                <div class="blocks-container mr-b-40">
                                     <div class="block-box">
                                         <div class="block-contents">
                                             <img src="img/text.svg" alt="" class="mr-b-16">
@@ -240,7 +245,11 @@
                                             </p>
                                         </div>
                                     </div>
-
+                                    
+                                </div>
+                                <div class="blocks-btn-container">
+                                    <button class="email-block-btn email-block-btn-save"><img src="img/save.svg" alt=""> Save</button>
+                                    <button class="email-block-btn email-block-btn-cancel"> Cancel </button>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="nav-profile" role="tabpanel"
@@ -248,18 +257,78 @@
                                 <div class="block-styles">
 
 
-                                    <div class="block-style-cont">
+                                    <!-- button styles -->
+
+                                    <!-- <div class="block-style-cont">
                                         <h4 class="template-h-secondary mr-b-24">Button</h4>
-                                        <div class="block-style-form mr-b-8">
+                                        <div class="block-style-form mr-b-16">
                                             <label for="content" class="block-template-label ">Content</label>
                                             <input type="text" id="content" placeholder="This is Button">
                                         </div>
-                                        <div class="block-style-form mr-b-8">
+                                        <div class="block-style-form mr-b-16">
                                             <label for="link" class="block-template-label">Link</label>
                                             <input type="text" id="link" placeholder="#">
                                         </div>
+                                        <div class="block-input-single-row">
+                                            <div class="block-style-form mr-b-16">
+                                                <label for="bgColor" class="block-template-label">Background
+                                                    Color</label>
+                                                <input type="color" id="bgColor" class="color-input">
+                                            </div>
+                                            <div class="block-style-form mr-b-16">
+                                                <label for="textColor" class="block-template-label">Text Color</label>
+                                                <input type="color" id="textColor" class="color-input">
+                                            </div>
+                                        </div>
+                                        
 
+                                        <div class="block-style-form mr-b-16">
+                                            <label for="padding" class="block-template-label">Rounded Corners</label>
+                                            <input type="range" id="padding" min="1" max="100" value="0" class="block-slider">
+                                        </div>
+                                        <div class="block-style-form mr-b-16">
+                                            <label for="padding" class="block-template-label">Button Style</label>
+                                            <div class="block-input-single-row">
+                                                <div class="block-email-select">
+                                                    <select name="position" id="">
+                                                        <option value="Left">Left</option>
+                                                        <option value="Center">Center</option>
+                                                        <option value="Right">Right</option>
+                                                    </select>
+                                                </div>
+                                                <div class="block-email-select">
+                                                    <select name="width" id="">
+                                                        <option value="fitText">Fit to Text</option>
+                                                        <option value="fullWidth">Full Width</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="email-block-btn email-block-btn-save"><img src="img/save.svg" alt=""> Save and Continue </button>
+                                    </div> -->
+
+                                    <!-- image styles  -->
+
+                                    <div class="block-style-cont">
+                                        <h4 class="template-h-secondary mr-b-24">Image</h4>
+                                        <div class="block-style-form mr-b-16">
+                                            <label for="file-img" class="block-template-label ">Select File</label>
+                                            <input type="file" id="file-img">
+                                        </div>
+                                                                 
+                                        <div class="block-style-form mr-b-16">
+                                            <label for="width" class="block-template-label">Width</label>
+                                            <input type="range" id="width" min="1" max="100" value="0" class="block-slider">
+                                        </div>
+                                        <div class="block-style-form mr-b-24">
+                                            <label for="rounded-corners" class="block-template-label">Rounded Corners</label>
+                                            <input type="range" id="rounded-corners" min="1" max="100" value="0" class="block-slider">
+                                        </div>
+                                       
+                                        <button class="email-block-btn email-block-btn-save"><img src="img/save.svg" alt=""> Save and Continue </button>
                                     </div>
+
+
 
                                 </div>
                             </div>

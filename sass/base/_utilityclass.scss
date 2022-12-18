@@ -19,3 +19,13 @@
 .mr-b-8{
     margin-bottom: 8px;
 }
+
+.block-input-single-row{
+    display: flex;
+    // justify-content: space-between;
+    gap:40px;
+}
+
+.block-slider{
+    max-width: 200px;
+}
