@@ -168,20 +168,17 @@ p {
     margin: auto;
     margin-bottom: 4px; }
 
-.template-edit-display table {
+.template-edit-display {
   width: 100%; }
-  .template-edit-display table tr {
-    width: 100%; }
-    .template-edit-display table tr td {
-      width: 100%; }
-  .template-edit-display table .block {
+  .template-edit-display .block {
     padding: 10px;
     border-radius: 6px;
     position: relative;
     cursor: pointer;
     margin-top: 20px;
-    border: 2px solid transparent; }
-    .template-edit-display table .block .edit-block {
+    border: 2px solid transparent;
+    width: 100%; }
+    .template-edit-display .block .edit-block {
       background: #00A3CC;
       position: absolute;
       bottom: calc(100% + 1px);
@@ -190,21 +187,24 @@ p {
       gap: 45px;
       border-radius: 20px 20px 0px 0px;
       display: none; }
-    .template-edit-display table .block:hover {
+    .template-edit-display .block:hover {
       border: 2px solid #00A3CC; }
-    .template-edit-display table .block:hover .edit-block {
+    .template-edit-display .block:hover .edit-block {
       display: flex; }
 
 .block-styles .block-style-cont .block-style-form {
   display: flex;
   flex-direction: column; }
-  .block-styles .block-style-cont .block-style-form input, .block-styles .block-style-cont .block-style-form select {
+  .block-styles .block-style-cont .block-style-form input,
+  .block-styles .block-style-cont .block-style-form select {
     outline: none;
     background: #FFFFFF;
     border: 1px solid #DEE2E6;
     border-radius: 4px;
     padding: 8px 10px; }
-    .block-styles .block-style-cont .block-style-form input:focus, .block-styles .block-style-cont .block-style-form input:focus-visible, .block-styles .block-style-cont .block-style-form select:focus, .block-styles .block-style-cont .block-style-form select:focus-visible {
+    .block-styles .block-style-cont .block-style-form input:focus, .block-styles .block-style-cont .block-style-form input:focus-visible,
+    .block-styles .block-style-cont .block-style-form select:focus,
+    .block-styles .block-style-cont .block-style-form select:focus-visible {
       border: 1px solid #00A3CC; }
   .block-styles .block-style-cont .block-style-form .color-input {
     width: 50px;

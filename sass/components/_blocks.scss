@@ -1,20 +1,6 @@
 .template-edit-display {
-
-    table {
-
-        width: 100%;
-
-        tr {
-            width: 100%;
-
-            td {
-                width: 100%;
-            }
-        }
-
-
-
-
+    width: 100%;
+    
         .block {
             padding: 10px;
             border-radius: 6px;
@@ -22,6 +8,7 @@
             cursor: pointer;
             margin-top: 20px;
             border: 2px solid transparent;
+            width: 100%;
 
             .edit-block {
                 background: $theme-primary-color;
@@ -42,10 +29,8 @@
                 display: flex;
             }
 
-            
         }
-
-    }
+      
 
 }
 
@@ -60,7 +45,8 @@
             flex-direction: column;
 
 
-            input,select {
+            input,
+            select {
                 outline: none;
                 background: #FFFFFF;
                 border: 1px solid #DEE2E6;
@@ -73,7 +59,7 @@
                 }
             }
 
-            .color-input{
+            .color-input {
                 width: 50px;
                 height: 50px;
                 // margin: 0;
@@ -83,15 +69,15 @@
                 }
             }
 
-            .block-email-select{
+            .block-email-select {
                 width: 100%;
-                
-                select{
+
+                select {
                     width: 100%;
                 }
             }
 
-            
+
 
         }
 
@@ -123,7 +109,7 @@
     }
 
     .email-template-footer {
-        min-height: 100px;
+        
         background: $theme-black;
         text-align: center;
         padding: 20px;
@@ -145,14 +131,13 @@
         .email-template-footer-content {
             padding: 20px;
             padding-top: 0;
-         
+
         }
 
         .email-template-divider {
             width: 100%;
             background: rgb(151, 151, 151);
             height: 1px;
-
         }
     }
 }
